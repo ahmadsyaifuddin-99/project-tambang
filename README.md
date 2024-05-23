@@ -2,6 +2,8 @@
  Pewarisan Sifat (Inheritance) dalam Java untuk dua kelas, yaitu Material dan Location. membuat dua kelas dasar Material dan Location, dan kemudian membuat kelas turunan yang mewarisi sifat-sifat dari kedua kelas ini.
 
 ## Path Dir Files:
+
+.
 project-tambang/
 ├───build
 │   └───classes
@@ -18,7 +20,7 @@ project-tambang/
 │   │       └───model
 │   └───project
 │       └───tambang
-└───test
+└───test ...
 
 ## Berikut penjelasan dari fungsi codingannya :
 
