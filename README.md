@@ -4,7 +4,7 @@
 ## Berikut penjelasan dari fungsi codingannya :
 
 ## Class Material.java
-```
+```haskell
 package asai.project.model;
 
 public class Material {
@@ -48,7 +48,7 @@ public class Material {
 
 ## Class Location
 
-```
+```haskell
 package asai.project.model;
 
 public class Location {
@@ -94,7 +94,7 @@ Attributes: address (alamat lokasi) dan city (kota lokasi).</li>
 </li>
 
 ## Class MaterialLocation
-```
+```haskell
 package asai.project.model;
 
 public class MaterialLocation extends Material {
@@ -148,7 +148,7 @@ Inheritance: MaterialLocation adalah subclass dari Material, sehingga mewarisi a
 </li>
 
 # Class Main
-```
+```haskell
 package asai.project.model;
 
 import com.yourcompany.projectname.model.MaterialLocation;
