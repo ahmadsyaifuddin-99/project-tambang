@@ -21,6 +21,7 @@ project-tambang/
 │   └───project
 │       └───tambang
 └───test
+```
 
 ## Berikut penjelasan dari fungsi codingannya :
 
