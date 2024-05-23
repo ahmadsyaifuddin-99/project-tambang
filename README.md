@@ -40,11 +40,11 @@ public class Material {
 ```
 ### Penjelasan:
 Penjelasan:
-<li>
-Attributes: name (nama material) dan density (densitas material).
-Constructor: Menginisialisasi name dan density saat objek Material dibuat.
-Getters and Setters: Metode untuk mendapatkan dan mengubah nilai name dan density.
-toString: Mengembalikan representasi string dari objek Material.
+<li>Attributes: name (nama material) dan density (densitas material).</li>
+<li>Constructor: Menginisialisasi name dan density saat objek Material dibuat.</li>
+<li>Getters and Setters: Metode untuk mendapatkan dan mengubah nilai name dan density.
+</li>
+<li>toString: Mengembalikan representasi string dari objek Material.
 </li>
 
 # Class Location
@@ -86,10 +86,12 @@ public class Location {
 
 ### Penjelasan:
 <li>
-Attributes: address (alamat lokasi) dan city (kota lokasi).
-Constructor: Menginisialisasi address dan city saat objek Location dibuat.
-Getters and Setters: Metode untuk mendapatkan dan mengubah nilai address dan city.
-toString: Mengembalikan representasi string dari objek Location.
+Attributes: address (alamat lokasi) dan city (kota lokasi).</li>
+<li>Constructor: Menginisialisasi address dan city saat objek Location dibuat.
+</li>
+<li>Getters and Setters: Metode untuk mendapatkan dan mengubah nilai address dan city.
+</li>
+<li>toString: Mengembalikan representasi string dari objek Location.
 </li>
 
 # Class MaterialLocation
@@ -136,10 +138,14 @@ public class MaterialLocation extends Material {
 ### Penjelasan:
 <li>
 Inheritance: MaterialLocation adalah subclass dari Material, sehingga mewarisi atribut dan metode dari Material.
-Attributes: location (objek Location yang mewakili alamat dan kota).
-Constructor: Menginisialisasi atribut name dan density menggunakan konstruktor superclass (Material) dan menginisialisasi location dengan objek Location baru.
-Getters and Setters: Metode untuk mendapatkan dan mengubah nilai address dan city dari objek Location.
-toString: Mengembalikan representasi string dari objek MaterialLocation, termasuk atribut yang diwarisi dari Material dan atribut location.
+</li>
+<li>Attributes: location (objek Location yang mewakili alamat dan kota).
+</li>
+<li>Constructor: Menginisialisasi atribut name dan density menggunakan konstruktor superclass (Material) dan menginisialisasi location dengan objek Location baru.
+</li>
+<li>Getters and Setters: Metode untuk mendapatkan dan mengubah nilai address dan city dari objek Location.
+</li>
+<li>toString: Mengembalikan representasi string dari objek MaterialLocation, termasuk atribut yang diwarisi dari Material dan atribut location.
 </li>
 
 # Class Main
@@ -167,11 +173,17 @@ public class Main {
 
 ### Penjelasan:
 <li>
-Package Declaration: Menyatakan bahwa kelas Main berada dalam paket com.yourcompany.projectname.
-Import Statement: Mengimpor kelas MaterialLocation dari paket com.yourcompany.projectname.model.
-Main Method: Titik masuk program yang akan dijalankan saat program dimulai.
-MaterialLocation Object Creation: Membuat objek MaterialLocation dengan nama "Steel", densitas 7.85, alamat "123 Industrial Rd", dan kota "Metaltown".
-Printing Initial State: Mencetak representasi string dari objek MaterialLocation.
-Updating Address: Mengubah alamat menjadi "456 Manufacturing Ave" dan mencetak alamat yang diperbarui.
-Updating City: Mengubah kota menjadi "New Metaltown" dan mencetak kota yang diperbarui.
+Package Declaration: Menyatakan bahwa kelas Main berada dalam paket asai.project.model.
+</li>
+<li>Import Statement: Mengimpor kelas MaterialLocation dari paket asai.project.model.
+</li>
+<li>Main Method: Titik masuk program yang akan dijalankan saat program dimulai.
+</li>
+<li>MaterialLocation Object Creation: Membuat objek MaterialLocation dengan nama "Steel", densitas 7.85, alamat "123 Industrial Rd", dan kota "Metaltown".
+</li>
+<li>Printing Initial State: Mencetak representasi string dari objek MaterialLocation.
+</li>
+<li>Updating Address: Mengubah alamat menjadi "456 Manufacturing Ave" dan mencetak alamat yang diperbarui.
+</li>
+<li>Updating City: Mengubah kota menjadi "New Metaltown" dan mencetak kota yang diperbarui.
 </li>
