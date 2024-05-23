@@ -3,7 +3,7 @@
 
 ## Path Dir Files:
 
-.
+```
 project-tambang/
 ├───build
 │   └───classes
@@ -20,7 +20,7 @@ project-tambang/
 │   │       └───model
 │   └───project
 │       └───tambang
-└───test ...
+└───test
 
 ## Berikut penjelasan dari fungsi codingannya :
 
