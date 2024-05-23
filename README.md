@@ -22,7 +22,8 @@ project-tambang/
 │       └───tambang
 └───test
 
-Atau
+
+In deep dir src
 
 project-tambang/
 |-- src/
