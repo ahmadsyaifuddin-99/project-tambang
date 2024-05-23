@@ -3,7 +3,7 @@
 
 ## Berikut penjelasan dari fungsi codingannya :
 
-### Class Material.java
+## Class Material.java
 ```
 package asai.project.model;
 
@@ -46,7 +46,7 @@ public class Material {
 <li>toString: Mengembalikan representasi string dari objek Material.
 </li>
 
-# Class Location
+## Class Location
 
 ```
 package asai.project.model;
@@ -93,7 +93,7 @@ Attributes: address (alamat lokasi) dan city (kota lokasi).</li>
 <li>toString: Mengembalikan representasi string dari objek Location.
 </li>
 
-# Class MaterialLocation
+## Class MaterialLocation
 ```
 package asai.project.model;
 
