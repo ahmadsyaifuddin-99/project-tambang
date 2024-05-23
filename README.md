@@ -1,5 +1,5 @@
 # project-tambang
- Pewarisan Sifat (Inheritance) dalam Java untuk dua kelas, yaitu Material dan Location. membuat dua kelas dasar Material dan Location, dan kemudian membuat kelas turunan yang mewarisi sifat-sifat dari kedua kelas ini.
+Pewarisan Sifat (Inheritance) dalam Java untuk dua class, yaitu Material dan Location. membuat dua class dasar Material dan Location, dan kemudian membuat class turunan yang mewarisi sifat-sifat dari kedua class ini.
 
 >[!TIP]
 >Ini link google drive [Google Drive/Project-tambang](https://drive.google.com/drive/folders/1SCdykxUFIJ-tHOmNKX5tnV7WnQJZwpoq?usp=sharing).
