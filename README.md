@@ -21,6 +21,23 @@ project-tambang/
 │   └───project
 │       └───tambang
 └───test
+
+Atau
+
+project-tambang/
+|-- src/
+    |-- main/
+        |-- java/
+            |-- asai/
+                |-- project/
+                    |-- model/
+                        |-- Material.java
+                        |-- Location.java
+                        |-- MaterialLocation.java
+            |-- project/
+                |-- tambang/
+                    |-- Main.java
+
 ```
 
 ## Berikut penjelasan dari fungsi codingannya :
