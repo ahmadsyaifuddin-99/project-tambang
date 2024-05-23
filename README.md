@@ -191,7 +191,7 @@ Inheritance: MaterialLocation adalah subclass dari Material, sehingga mewarisi a
 ```haskell
 package asai.project.model;
 
-import com.yourcompany.projectname.model.MaterialLocation;
+import asai.project.model.MaterialLocation;
 
 public class Main {
     public static void main(String[] args) {
