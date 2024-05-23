@@ -1,6 +1,25 @@
 # project-tambang
  Pewarisan Sifat (Inheritance) dalam Java untuk dua kelas, yaitu Material dan Location. membuat dua kelas dasar Material dan Location, dan kemudian membuat kelas turunan yang mewarisi sifat-sifat dari kedua kelas ini.
 
+## Path Dir Files:
+project-tambang/
+├───build
+│   └───classes
+│       ├───asai
+│       │   └───project
+│       │       └───model
+│       └───project
+│           └───tambang
+├───nbproject
+│   └───private
+├───src
+│   ├───asai
+│   │   └───project
+│   │       └───model
+│   └───project
+│       └───tambang
+└───test
+
 ## Berikut penjelasan dari fungsi codingannya :
 
 ## Class Material.java
