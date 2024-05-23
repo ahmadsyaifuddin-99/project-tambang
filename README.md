@@ -39,7 +39,6 @@ public class Material {
 }
 ```
 ### Penjelasan:
-Penjelasan:
 <li>Attributes: name (nama material) dan density (densitas material).</li>
 <li>Constructor: Menginisialisasi name dan density saat objek Material dibuat.</li>
 <li>Getters and Setters: Metode untuk mendapatkan dan mengubah nilai name dan density.
