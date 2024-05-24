@@ -3,8 +3,7 @@ Pewarisan Sifat (Inheritance) dalam Java untuk dua class, yaitu Material dan Loc
 
 
 >[!TIP]
->Ini link google drive [Google Drive/Project-tambang](https://drive.google.com/drive/folders/1SCdykxUFIJ-tHOmNKX5tnV7WnQJZwpoq?usp=sharing).
- 
+>Ini link google drive [Google Drive/Project-tambang](https://drive.google.com/drive/folders/1SCdykxUFIJ-tHOmNKX5tnV7WnQJZwpoq?usp=sharing)
  
 
 ## Path Dir Files:
