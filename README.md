@@ -92,7 +92,7 @@ public class Material {
 <li>toString: Mengembalikan representasi string dari objek Material.
 </li>
 
-## Class Location
+## Class Location.java
 
 ```haskell
 package asai.project.model;
@@ -139,7 +139,7 @@ Attributes: address (alamat lokasi) dan city (kota lokasi).</li>
 <li>toString: Mengembalikan representasi string dari objek Location.
 </li>
 
-## Class MaterialLocation
+## Class MaterialLocation.java
 ```haskell
 package asai.project.model;
 
@@ -193,42 +193,207 @@ Inheritance: MaterialLocation adalah subclass dari Material, sehingga mewarisi a
 <li>toString: Mengembalikan representasi string dari objek MaterialLocation, termasuk atribut yang diwarisi dari Material dan atribut location.
 </li>
 
-# Class Main
+
+## Class Main.java (Full)
+
 ```haskell
-package asai.project.model;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package project.tambang;
+
+/**
+ *
+ * @author User
+ */
 
 import asai.project.model.MaterialLocation;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        MaterialLocation materialLocation = new MaterialLocation("Steel", 7.85, "123 Industrial Rd", "Metaltown");
-        System.out.println(materialLocation);
-
-        // Mengubah alamat
-        materialLocation.setAddress("456 Manufacturing Ave");
-        System.out.println("Updated Address: " + materialLocation.getAddress());
-
-        // Mengubah kota
-        materialLocation.setCity("New Metaltown");
-        System.out.println("Updated City: " + materialLocation.getCity());
+        // Input untuk Material
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Input untuk Material
+            System.out.println("Masukkan nama material:");
+            String name = scanner.nextLine();
+            
+            System.out.println("Masukkan densitas material:");
+            double density = scanner.nextDouble();
+            scanner.nextLine();  // Clear the buffer
+            
+            // Input untuk Location
+            System.out.println("Masukkan alamat lokasi:");
+            String address = scanner.nextLine();
+            
+            System.out.println("Masukkan kota lokasi:");
+            String city = scanner.nextLine();
+            
+            // Membuat objek MaterialLocation dengan data yang diinputkan
+            MaterialLocation materialLocation = new MaterialLocation(name, density, address, city);
+            System.out.println(materialLocation);
+            
+            // Mengubah alamat
+            System.out.println("Masukkan alamat baru:");
+            String newAddress = scanner.nextLine();
+            materialLocation.setAddress(newAddress);
+            System.out.println("Updated Address: " + materialLocation.getAddress());
+            
+            // Mengubah kota
+            System.out.println("Masukkan kota baru:");
+            String newCity = scanner.nextLine();
+            materialLocation.setCity(newCity);
+            System.out.println("Updated City: " + materialLocation.getCity());
+        }
     }
 }
 
 ```
 
-### Penjelasan:
-<li>
-Package Declaration: Menyatakan bahwa kelas Main berada dalam paket asai.project.model.
+### Penjelasan Detail untuk Code Class Main.java:
+### Header dan Package Declaration
+```haskell
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package project.tambang;
+```
+<li>Komentar: Ini adalah komentar yang dibuat secara otomatis oleh NetBeans saat membuat file Java baru. Komentar ini menunjukkan lokasi template lisensi dan template kelas.
 </li>
-<li>Import Statement: Mengimpor kelas MaterialLocation dari paket asai.project.model.
+<li>Package Declaration: Menyatakan bahwa kelas Main berada dalam paket project.tambang.</li>
+
+### Import Statements
+```haskell
+import asai.project.model.MaterialLocation;
+import java.util.Scanner;
+```
+<li>import asai.project.model.MaterialLocation; Mengimpor kelas MaterialLocation dari paket asai.project.model
 </li>
-<li>Main Method: Titik masuk program yang akan dijalankan saat program dimulai.
+<li>import java.util.Scanner; Mengimpor kelas Scanner dari paket java.util untuk membaca input dari pengguna
 </li>
-<li>MaterialLocation Object Creation: Membuat objek MaterialLocation dengan nama "Steel", densitas 7.85, alamat "123 Industrial Rd", dan kota "Metaltown".
+
+### Deklarasi Kelas Main
+```haskell
+/**
+ *
+ * @author User
+ */
+
+public class Main {
+    public static void main(String[] args) {
+
+```
+<li>Javadoc Comment: Komentar ini bisa digunakan untuk memberikan informasi tambahan tentang kelas atau penulisnya.
 </li>
-<li>Printing Initial State: Mencetak representasi string dari objek MaterialLocation.
+<li>Deklarasi Kelas: public class Main mendeklarasikan kelas Main.
 </li>
-<li>Updating Address: Mengubah alamat menjadi "456 Manufacturing Ave" dan mencetak alamat yang diperbarui.
+<li>Metode Main: public static void main(String[] args) adalah titik masuk utama dari aplikasi Java.
 </li>
-<li>Updating City: Mengubah kota menjadi "New Metaltown" dan mencetak kota yang diperbarui.
+
+### Penggunaan Scanner dengan try-with-resources
+```haskell
+        try (Scanner scanner = new Scanner(System.in)) {
+```
+<li>try-with-resources: Blok ini memastikan bahwa objek Scanner akan ditutup secara otomatis setelah digunakan, yang merupakan praktik yang baik untuk mengelola sumber daya.
 </li>
+
+### Input untuk Material
+```haskell
+            // Input untuk Material
+            System.out.println("Masukkan nama material:");
+            String name = scanner.nextLine();
+            
+            System.out.println("Masukkan densitas material:");
+            double density = scanner.nextDouble();
+            scanner.nextLine();  // Clear the buffer
+```
+<li>System.out.println("Masukkan nama material:");: Menampilkan pesan untuk meminta pengguna memasukkan nama material.
+</li>
+<li>String name = scanner.nextLine();: Membaca input nama material dari pengguna.
+</li>
+<li>System.out.println("Masukkan densitas material:");: Menampilkan pesan untuk meminta pengguna memasukkan densitas material.
+</li>
+<li>double density = scanner.nextDouble();: Membaca input densitas material dari pengguna.
+</li>
+<li>scanner.nextLine(); // Clear the buffer: Membersihkan buffer input setelah membaca nilai double. Ini diperlukan karena nextDouble tidak mengkonsumsi karakter newline (\n), sehingga kita perlu memanggil nextLine untuk mengosongkan buffer.
+</li>
+
+### Input untuk Location
+```haskell
+            // Input untuk Location
+            System.out.println("Masukkan alamat lokasi:");
+            String address = scanner.nextLine();
+            
+            System.out.println("Masukkan kota lokasi:");
+            String city = scanner.nextLine();
+```
+<li>System.out.println("Masukkan alamat lokasi:");: Menampilkan pesan untuk meminta pengguna memasukkan alamat lokasi.
+</li>
+<li>String address = scanner.nextLine();: Membaca input alamat dari pengguna.
+</li>
+<li>System.out.println("Masukkan kota lokasi:");: Menampilkan pesan untuk meminta pengguna memasukkan kota lokasi.
+</li>
+<li>String city = scanner.nextLine();: Membaca input kota dari pengguna.
+</li>
+
+### Membuat dan Menampilkan Objek MaterialLocation
+```haskell
+            // Membuat objek MaterialLocation dengan data yang diinputkan
+            MaterialLocation materialLocation = new MaterialLocation(name, density, address, city);
+            System.out.println(materialLocation);
+```
+<li>MaterialLocation materialLocation = new MaterialLocation(name, density, address, city);: Membuat objek MaterialLocation dengan data yang diinputkan oleh pengguna.
+</li>
+<li>System.out.println(materialLocation);: Menampilkan representasi string dari objek MaterialLocation. Metode toString di MaterialLocation akan dipanggil untuk menghasilkan output ini.
+</li>
+
+### Mengubah Alamat
+```haskell
+            // Mengubah alamat
+            System.out.println("Masukkan alamat baru:");
+            String newAddress = scanner.nextLine();
+            materialLocation.setAddress(newAddress);
+            System.out.println("Updated Address: " + materialLocation.getAddress());
+```
+<li>System.out.println("Masukkan alamat baru:");: Menampilkan pesan untuk meminta pengguna memasukkan alamat baru.
+</li>
+<li>String newAddress = scanner.nextLine();: Membaca input alamat baru dari pengguna.
+</li>
+<li>materialLocation.setAddress(newAddress);: Mengubah alamat dalam objek MaterialLocation dengan alamat baru yang diinputkan.
+</li>
+<li>System.out.println("Updated Address: " + materialLocation.getAddress());: Menampilkan alamat yang telah diperbarui.
+</li>
+
+### Mengubah Kota
+```haskell
+            // Mengubah kota
+            System.out.println("Masukkan kota baru:");
+            String newCity = scanner.nextLine();
+            materialLocation.setCity(newCity);
+            System.out.println("Updated City: " + materialLocation.getCity());
+        }
+```
+<li>System.out.println("Masukkan kota baru:");: Menampilkan pesan untuk meminta pengguna memasukkan kota baru.
+</li>
+<li>String newCity = scanner.nextLine();: Membaca input kota baru dari pengguna.
+</li>
+<li>materialLocation.setCity(newCity);: Mengubah kota dalam objek MaterialLocation dengan kota baru yang diinputkan.
+</li>
+<li>System.out.println("Updated City: " + materialLocation.getCity());: Menampilkan kota yang telah diperbarui.
+</li>
+
+### Menutup try-with-resources
+```haskell
+    }
+}
+```
+<li>Menutup blok try-with-resources: Objek Scanner akan ditutup secara otomatis ketika blok try selesai dieksekusi, memastikan pengelolaan sumber daya yang baik.
+</li>
+
+## Ringkasan 
+<p>Kode ini memungkinkan pengguna untuk memasukkan data material dan lokasi melalui konsol, membuat objek MaterialLocation dengan data tersebut, menampilkan informasi objek, dan kemudian memperbarui serta menampilkan alamat dan kota baru. Penggunaan try-with-resources memastikan bahwa Scanner ditutup dengan benar setelah digunakan.
+</p>
+
