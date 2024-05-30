@@ -5,8 +5,10 @@
         <group>
             <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/project/tambang/Main.java</file>
             <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/asai/project/model/Location.java</file>
+            <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/CRUD/DatabaseConnection.java</file>
             <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/asai/project/model/Material.java</file>
-            <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/asai/project/model/MaterialLocation.java</file>
+            <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/asai/project/model/Company.java</file>
+            <file>file:/D:/AHMAD%20SYAIFUDDIN/Java/Java-Projects/project-tambang/src/asai/project/model/CoalGetting.java</file>
         </group>
     </open-files>
 </project-private>

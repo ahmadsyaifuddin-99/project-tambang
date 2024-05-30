@@ -1,40 +1,48 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package asai.project.model;
 
-/**
- *
- * @author User
- */
+import java.util.Date;
+
 public class Location {
-    private String address;
-    private String city;
+    private String codeLocation;
+    private String descLocation;
+    private Date createdAt;
 
-    public Location(String address, String city) {
-        this.address = address;
-        this.city = city;
+    public Location(String codeLocation, String descLocation, Date createdAt) {
+        this.codeLocation = codeLocation;
+        this.descLocation = descLocation;
+        this.createdAt = createdAt;
     }
 
-    public String getAddress() {
-        return address;
+    public String getCodeLocation() {
+        return codeLocation;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setCodeLocation(String codeLocation) {
+        this.codeLocation = codeLocation;
     }
 
-    public String getCity() {
-        return city;
+    public String getDescLocation() {
+        return descLocation;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setDescLocation(String descLocation) {
+        this.descLocation = descLocation;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override
     public String toString() {
-        return "Location{address='" + address + "', city='" + city + "'}";
+        return "Location{" +
+                "codeLocation='" + codeLocation + '\'' +
+                ", descLocation='" + descLocation + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
     }
 }
