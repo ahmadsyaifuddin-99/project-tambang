@@ -9,7 +9,7 @@ Pewarisan Sifat (Inheritance) dalam Java untuk dua class, yaitu Material dan Loc
 
 ## Path Dir Files:
 
-```
+```haskell
 project-tambang/
 ├───build
 │   └───classes
@@ -27,24 +27,30 @@ project-tambang/
 │   └───project
 │       └───tambang
 └───test
-
+```
 
 In deep dir src
-
-project-tambang/
-|-- src/
-    |-- main/
-        |-- java/
-            |-- asai/
-                |-- project/
-                    |-- model/
-                        |-- Material.java
-                        |-- Location.java
-                        |-- MaterialLocation.java
-            |-- project/
-                |-- tambang/
-                    |-- Main.java
-
+```css
+project-tambang
+│
+├── src
+│   ├── asai_project_model
+│   │   ├── CoalGetting.java
+│   │   ├── Company.java
+│   │   ├── Location.java
+│   │   └── Material.java
+│   │
+│   ├── project_tambang
+│   │   └── Main.java
+│   │
+│   └── tambang_DAO
+│       ├── CoalGettingDAO.java
+│       ├── CompanyDAO.java
+│       ├── LocationDAO.java
+│       └── MaterialDAO.java
+│
+└── CRUD
+    └── DatabaseConnection.java
 ```
 
 ## Berikut penjelasan dari fungsi codingannya :
