@@ -1,7 +1,7 @@
 package tambang_DAO;
 
 import asai_project_model.Material;
-import CRUD.DatabaseConnection;
+import Koneksi.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;

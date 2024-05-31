@@ -8,7 +8,7 @@ package tambang_DAO;
  *
  * @author User
  */
-import CRUD.DatabaseConnection;
+import Koneksi.DatabaseConnection;
 import asai_project_model.CoalGetting;
 
 import java.sql.*;

@@ -9,7 +9,7 @@ package tambang_DAO;
  * @author User
  */
 import asai_project_model.Company;
-import CRUD.DatabaseConnection;
+import Koneksi.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
