@@ -12,20 +12,28 @@ Pewarisan Sifat (Inheritance) dalam Java untuk dua class, yaitu Material dan Loc
 ```haskell
 project-tambang/
 ├───build
-│   └───classes
-│       ├───asai
-│       │   └───project
-│       │       └───model
-│       └───project
-│           └───tambang
+│   ├───classes
+│   │   ├───asai
+│   │   │   └───project
+│   │   │       └───model
+│   │   ├───asai_project_model
+│   │   ├───CRUD
+│   │   ├───project
+│   │   │   └───tambang
+│   │   ├───project_tambang
+│   │   └───tambang_DAO
+│   ├───empty
+│   └───generated-sources
+│       └───ap-source-output
+├───dist
+│   └───lib
 ├───nbproject
 │   └───private
 ├───src
-│   ├───asai
-│   │   └───project
-│   │       └───model
-│   └───project
-│       └───tambang
+│   ├───asai_project_model
+│   ├───CRUD
+│   ├───project_tambang
+│   └───tambang_DAO
 └───test
 ```
 
