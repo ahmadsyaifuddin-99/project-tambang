@@ -1,50 +1,66 @@
 # project-tambang
 Pewarisan Sifat (Inheritance) dalam Java untuk dua class, yaitu Material dan Location. membuat dua class dasar Material dan Location, dan kemudian membuat class turunan yang mewarisi sifat-sifat dari kedua class ini.
 
+>[!IMPORTANT]
+>Project ini akan terus update dan mengalami perubahan code hingga di akhir sem PBO 1 (Java) 
 
->[!TIP]
+>[!NOTE]
 >Ini link google drive [Google Drive/Project-tambang](https://drive.google.com/drive/folders/1SCdykxUFIJ-tHOmNKX5tnV7WnQJZwpoq?usp=sharing)
  
 ![GitHub repo size](https://img.shields.io/github/repo-size/ahmadsyaifuddin-99/project-tambang)
 
 ## Path Dir Files:
 
-```
+```haskell
 project-tambang/
 ├───build
-│   └───classes
-│       ├───asai
-│       │   └───project
-│       │       └───model
-│       └───project
-│           └───tambang
+│   ├───classes
+│   │   ├───asai
+│   │   │   └───project
+│   │   │       └───model
+│   │   ├───asai_project_model
+│   │   ├───CRUD
+│   │   ├───project
+│   │   │   └───tambang
+│   │   ├───project_tambang
+│   │   └───tambang_DAO
+│   ├───empty
+│   └───generated-sources
+│       └───ap-source-output
+├───dist
+│   └───lib
 ├───nbproject
 │   └───private
 ├───src
-│   ├───asai
-│   │   └───project
-│   │       └───model
-│   └───project
-│       └───tambang
+│   ├───asai_project_model
+│   ├───CRUD
+│   ├───project_tambang
+│   └───tambang_DAO
 └───test
-
+```
 
 In deep dir src
-
-project-tambang/
-|-- src/
-    |-- main/
-        |-- java/
-            |-- asai/
-                |-- project/
-                    |-- model/
-                        |-- Material.java
-                        |-- Location.java
-                        |-- MaterialLocation.java
-            |-- project/
-                |-- tambang/
-                    |-- Main.java
-
+```css
+project-tambang
+│
+├── src
+│   ├── asai_project_model
+│   │   ├── CoalGetting.java
+│   │   ├── Company.java
+│   │   ├── Location.java
+│   │   └── Material.java
+│   │
+│   ├── project_tambang
+│   │   └── Main.java
+│   │
+│   └── tambang_DAO
+│       ├── CoalGettingDAO.java
+│       ├── CompanyDAO.java
+│       ├── LocationDAO.java
+│       └── MaterialDAO.java
+│
+└── CRUD
+    └── DatabaseConnection.java
 ```
 
 ## Berikut penjelasan dari fungsi codingannya :
