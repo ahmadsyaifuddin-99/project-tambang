@@ -9,7 +9,7 @@ package tambang_DAO;
  * @author User
  */
 import CRUD.DatabaseConnection;
-import asai.project.model.CoalGetting;
+import asai_project_model.CoalGetting;
 
 import java.sql.*;
 import java.util.ArrayList;

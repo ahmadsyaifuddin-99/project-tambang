@@ -1,4 +1,4 @@
-package asai.project.model;
+package asai_project_model;
 
 import java.util.Date;
 

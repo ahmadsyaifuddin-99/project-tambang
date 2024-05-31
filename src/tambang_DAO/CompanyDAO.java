@@ -8,7 +8,7 @@ package tambang_DAO;
  *
  * @author User
  */
-import asai.project.model.Company;
+import asai_project_model.Company;
 import CRUD.DatabaseConnection;
 
 import java.sql.*;

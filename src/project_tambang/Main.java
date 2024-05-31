@@ -1,8 +1,9 @@
-package project.tambang;
+package project_tambang;
 
+import asai_project_model.*;
 import tambang_DAO.*;
-import asai.project.model.*;
 import java.sql.SQLException;
+
 import java.util.Date;
 import java.util.Scanner;
 

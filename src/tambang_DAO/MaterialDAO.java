@@ -1,6 +1,6 @@
 package tambang_DAO;
 
-import asai.project.model.Material;
+import asai_project_model.Material;
 import CRUD.DatabaseConnection;
 
 import java.sql.*;
